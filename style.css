@@ -40,3 +40,80 @@ main{
         left: 37px;
         top: 95px;
     }
+
+    .icones_sociais{
+        
+        display: flex;
+        flex-direction:column;
+        justify-content:flex-end;/*alinhamento vertical*/
+        align-items: flex-end;/*alinhamento horizontal*/
+        height: 50vh;
+        width: 95vw;
+        text-align: center;
+        
+        
+        }
+        .facebook{
+        margin-right: 40px;
+        width: 50px;
+        height:50px;
+        background-image: url("imagens/logo-facebook.jpg");
+        background-size: cover;
+        border-radius: 50%;
+        }
+        .instagram{
+        margin: 8px;
+        width: 50px;
+        height:50px;
+        background-image: url("imagens/logo-instagram.jpg");
+        background-size: cover;
+        border-radius: 50%;
+        }
+        .github{
+        margin: 8px;
+        width: 50px;
+        height:50px;
+        background-image: url("imagens/logo-github.jpg");
+        background-size: cover;
+        border-radius: 50%;
+        }
+        .twiter{
+        margin: 8px;
+        width: 50px;
+        height:50px;
+        background-image: url("imagens/logo-twitter.jpg");
+        background-size: cover;
+        border-radius: 50%;
+        }
+        .youtube{
+        margin: 8px;
+        margin-right: 40px;
+        width: 50px;
+        height:50px;
+        background-image: url("imagens/logo-youtube.jpg");
+        background-size: cover;
+        border-radius: 50%;
+        }
+        .facebook:hover, .github:hover, .instagram:hover,.twiter:hover,.youtube:hover{
+            
+            width: 55px;
+            height: 55px;
+        }
+        
+        @media screen and (max-width:450px){
+            .icones_sociais{
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100vw;
+                height: 15vh;
+            }
+                .facebook{
+                    margin-right:0px;
+            }
+                .youtube{
+                    margin-right:0px;
+                }
+        }
+      
+       
