@@ -51,15 +51,29 @@ main{
         width: 95vw;
         text-align: center;
         
-        
         }
-        .facebook{
+        .botao_home{
         margin-right: 40px;
         width: 50px;
         height:50px;
-        background-image: url("imagens/logo-facebook.jpg");
+        background-image: url("imagens/logo-home.jpg");
         background-size: cover;
         border-radius: 50%;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.473);
+        box-sizing: border-box;
+        
+        }
+        
+        .whatsapp{
+        margin-right: 40px;
+        width: 50px;
+        height:50px;
+        background-image: url("imagens/logo-whats.png");
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.466);
+        box-sizing: border-box;
+        
         }
         .instagram{
         margin: 8px;
@@ -68,7 +82,10 @@ main{
         background-image: url("imagens/logo-instagram.jpg");
         background-size: cover;
         border-radius: 50%;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.452);
+        box-sizing: border-box;
         }
+
         .github{
         margin: 8px;
         width: 50px;
@@ -76,28 +93,16 @@ main{
         background-image: url("imagens/logo-github.jpg");
         background-size: cover;
         border-radius: 50%;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.514);
+        box-sizing: border-box;
         }
-        .twiter{
-        margin: 8px;
-        width: 50px;
-        height:50px;
-        background-image: url("imagens/logo-twitter.jpg");
-        background-size: cover;
-        border-radius: 50%;
-        }
-        .youtube{
-        margin: 8px;
-        margin-right: 40px;
-        width: 50px;
-        height:50px;
-        background-image: url("imagens/logo-youtube.jpg");
-        background-size: cover;
-        border-radius: 50%;
-        }
-        .facebook:hover, .github:hover, .instagram:hover,.twiter:hover,.youtube:hover{
+       
+        .botao_home:hover, .github:hover, .instagram:hover,.twiter:hover,.whatsapp:hover{
             
-            width: 55px;
-            height: 55px;
+            transition: 1s;
+            border: 1px solid rgba(253, 253, 253, 0.61);
+            box-shadow: 2px 2px 20px 10px rgba(236, 9, 9, 0.514);
+            
         }
         
         @media screen and (max-width:450px){
@@ -107,11 +112,14 @@ main{
                 align-items: center;
                 width: 100vw;
                 height: 15vh;
+                
+                
+               
             }
-                .facebook{
+                .botao_home{
                     margin-right:0px;
             }
-                .youtube{
+                .whatsapp{
                     margin-right:0px;
                 }
         }
